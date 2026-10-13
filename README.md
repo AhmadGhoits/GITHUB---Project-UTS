@@ -1,2 +1,2 @@
 # GITHUB---Project-UTS
-Repository ini digunakan untuk Project UTS pada mata kuliah Sistem Basis Data Pa Broer.
+Repository ini digunakan untuk Project UTS pada mata kuliah Sistem Basis Data Pa Broer
