@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A student portfolio for three Informatics Engineering students exploring programming and technology.">
+  <meta name="theme-color" content="#0b1120">
+  <title>CodeSpace — Informatics Team Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="CodeSpace home">
+        <span class="brand-mark">&lt;/&gt;</span>
+        <span>CodeSpace</span>
+      </a>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#team">Our Team</a>
+        <a href="#about">About</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-shell" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> INFORMATICS ENGINEERING · STUDENT PROJECT</p>
+        <h1>Three Minds,<br><span>One Code.</span></h1>
+        <p class="hero-description">A small portfolio of three Informatics Engineering students exploring programming, technology, and software development.</p>
+        <a class="button button-primary" href="#team">Meet Our Team <span aria-hidden="true">→</span></a>
+        <p class="hero-note"><span aria-hidden="true">✳</span> Learning, building, and growing together.</p>
+      </div>
+
+      <div class="editor-window" aria-label="Decorative code editor preview">
+        <div class="editor-topbar">
+          <div class="window-dots" aria-hidden="true"><i></i><i></i><i></i></div>
+          <span class="editor-tab"><span class="file-icon">JS</span> team.js</span>
+          <span class="editor-menu" aria-hidden="true">•••</span>
+        </div>
+        <div class="editor-code" aria-hidden="true">
+          <div><span class="line-number">1</span><span class="code-purple">const</span> <span class="code-blue">team</span> = [</div>
+          <div><span class="line-number">2</span>  <span class="code-green">"Khansa Dayana"</span>,</div>
+          <div><span class="line-number">3</span>  <span class="code-green">"Naufal Zafhran"</span>,</div>
+          <div><span class="line-number">4</span>  <span class="code-green">"Ahmad Ghoits"</span></div>
+          <div><span class="line-number">5</span>];</div>
+          <div class="code-spacer"><span class="line-number">6</span></div>
+          <div><span class="line-number">7</span><span class="code-purple">console</span>.<span class="code-blue">log</span>(<span class="code-green">"Let's build!"</span>);<span class="cursor"></span></div>
+        </div>
+        <div class="editor-status"><span>⦿ &nbsp;Ready to explore</span><span>UTF-8 &nbsp;|&nbsp; JavaScript</span></div>
+        <span class="editor-glow" aria-hidden="true"></span>
+      </div>
+      <div class="hero-decoration" aria-hidden="true">{ }</div>
+    </section>
+
+    <section class="team-section section-shell" id="team">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">01 / THE PEOPLE</p>
+          <h2>Meet our team<span class="heading-dot">.</span></h2>
+        </div>
+        <p>Three students, one shared curiosity.<br>Choose a profile to get to know us.</p>
+      </div>
+
+      <div class="team-layout">
+        <aside class="team-sidebar" aria-label="Choose a team member">
+          <p class="sidebar-label">TEAM MEMBERS <span>03</span></p>
+          <div class="member-tabs" role="group" aria-label="Team member profiles">
+            <button class="member-tab is-active" type="button" data-member="0" aria-pressed="true">
+              <span class="tab-avatar">KD</span><span class="tab-name">Khansa Dayana</span><span class="tab-arrow" aria-hidden="true">↗</span>
+            </button>
+            <button class="member-tab" type="button" data-member="1" aria-pressed="false">
+              <span class="tab-avatar">NZ</span><span class="tab-name">Naufal Zafhran</span><span class="tab-arrow" aria-hidden="true">↗</span>
+            </button>
+            <button class="member-tab" type="button" data-member="2" aria-pressed="false">
+              <span class="tab-avatar">AG</span><span class="tab-name">Ahmad Ghoits</span><span class="tab-arrow" aria-hidden="true">↗</span>
+            </button>
+          </div>
+          <div class="sidebar-caption"><span class="status-dot"></span> STUDENT DEVELOPER</div>
+        </aside>
+
+        <article class="profile-card" aria-live="polite" aria-atomic="true">
+          <div class="profile-topline"><span>PROFILE <span id="profile-number">01</span> / 03</span><span class="profile-location">INFORMATICS ENGINEERING</span></div>
+          <div class="profile-content" id="profile-content">
+            <div class="profile-main">
+              <div class="profile-avatar" id="profile-avatar" aria-hidden="true">KD</div>
+              <div class="profile-intro">
+                <p class="profile-kicker">HELLO, I'M</p>
+                <h3 id="profile-name">Khansa Dayana</h3>
+                <p class="profile-study">Teknik Informatika</p>
+                <p class="profile-bio" id="profile-bio"></p>
+              </div>
+            </div>
+            <div class="profile-details">
+              <div class="detail-block">
+                <h4>Exploring</h4>
+                <p id="profile-interests"></p>
+              </div>
+              <div class="detail-block">
+                <h4>Currently learning</h4>
+                <div class="profile-tags" id="profile-skills"></div>
+              </div>
+              <div class="project-block">
+                <div>
+                  <p class="project-label">PROJECT SHOWCASE</p>
+                  <h4 id="profile-project"></h4>
+                  <p class="project-note" id="project-note"></p>
+                </div>
+                <span class="project-icon" aria-hidden="true">&lt;/&gt;</span>
+              </div>
+              <div class="profile-links" id="profile-links"></div>
+            </div>
+          </div>
+          <div class="profile-controls">
+            <span class="control-hint">GET TO KNOW US</span>
+            <div class="control-buttons">
+              <button class="button button-outline" id="previous-profile" type="button" aria-label="Previous team member"><span aria-hidden="true">←</span> Previous</button>
+              <button class="button button-outline" id="next-profile" type="button" aria-label="Next team member">Next <span aria-hidden="true">→</span></button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="skills-section section-shell" aria-labelledby="skills-title">
+      <div class="section-heading compact-heading">
+        <div>
+          <p class="eyebrow">02 / THE TOOLBOX</p>
+          <h2 id="skills-title">Always learning<span class="heading-dot">.</span></h2>
+        </div>
+        <p>Technologies we are learning about<br>and exploring as a team.</p>
+      </div>
+      <div class="technology-list" aria-label="Technologies being explored">
+        <span class="technology-tag"><span>◈</span> HTML</span>
+        <span class="technology-tag"><span>◈</span> CSS</span>
+        <span class="technology-tag"><span>◈</span> JavaScript</span>
+        <span class="technology-tag"><span>◈</span> Python</span>
+        <span class="technology-tag"><span>◈</span> SQL</span>
+        <span class="technology-tag"><span>◈</span> Git &amp; GitHub</span>
+      </div>
+      <p class="skills-disclaimer">These are areas the team is studying or exploring; this list does not mean every member has mastered every technology.</p>
+    </section>
+
+    <section class="about-section section-shell" id="about">
+      <div class="about-mark" aria-hidden="true">&lt; / &gt;</div>
+      <div class="about-copy">
+        <p class="eyebrow">03 / WHY WE BUILT THIS</p>
+        <h2>A little project.<br>A lot to learn.</h2>
+        <p>This website is a group project by Informatics Engineering students. We created it to learn the basics of website development, manage files with GitHub, and publish a website using GitHub Pages.</p>
+      </div>
+      <div class="about-terminal" aria-label="Project terminal details">
+        <div class="terminal-title"><span class="window-dots" aria-hidden="true"><i></i><i></i><i></i></span><span>project-info</span></div>
+        <div class="terminal-body">
+          <p><span class="terminal-prompt">›</span> project <span class="terminal-value">"CodeSpace"</span></p>
+          <p><span class="terminal-prompt">›</span> purpose <span class="terminal-value">"learn &amp; create"</span></p>
+          <p><span class="terminal-prompt">›</span> deployment <span class="terminal-value">"GitHub Pages"</span></p>
+          <p><span class="terminal-prompt">›</span> status <span class="terminal-success">in progress<span class="cursor"></span></span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner container">
+      <a class="brand footer-brand" href="#home"><span class="brand-mark">&lt;/&gt;</span><span>CodeSpace</span></a>
+      <div class="footer-copy">
+        <p>CodeSpace — Informatics Team Portfolio</p>
+        <p>Created by Khansa Dayana, Naufal Zafhran, and Ahmad Ghoits · 2026</p>
+        <p class="footer-note">A student course project · Built for learning</p>
+      </div>
+      <a class="back-to-top" href="#home" aria-label="Back to top">↑</a>
+    </div>
+  </footer>
+</body>
+</html>
